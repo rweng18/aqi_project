@@ -1,3 +1,3 @@
-# aqi_project
+# flight_status_project
 
-Looking at air quality measured by AQI in cities around the US.
+Looking at how weather affects flights in the US.
