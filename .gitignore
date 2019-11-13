@@ -124,4 +124,7 @@ Thumbs.db
 config.py
 
 # api file
-*api.py
+api.py
+
+# Ignore Bureau of Transportation Statistics folder
+BTS_data/
