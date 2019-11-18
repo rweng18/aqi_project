@@ -98,20 +98,12 @@ count_airport.columns = ['# of Flights', 'Standard Deviation of Departure Delay 
 count_airport
 ```
 
+![](fig1_interaction_plot.jpg)
+
+From this figure, we can see that mean departure delay time is greater when it is raining for every origin airport. But the difference in mean departure delay time between the rain vs. no precipitation conditions is greater for JFK and LGA.
+
 ## Statistical Tests
 ### Two-sided t-test
-```python
-# Plot origin airport, mean departure delay, confidence intervals, and precipitation type
-interaction_plot = sns.catplot(x = 'origin', y = 'dep_delay', 
-                               hue = 'precip_type', kind = 'point',
-                               data = flight_weather_twoway);
-interaction_plot.set(xlabel = 'Origin', ylabel = 'Mean Departure Delay (Minutes)', 
-                     title = 'Mean Departure Delay (Minutes) By Origin City and Precipitation Type')
-interaction_plot._legend.set_title('Precipitation Type')
-for cat, label in zip(interaction_plot._legend.texts,('No Precipitation', 'Rain')):
-    cat.set_text(label)
-interaction_plot.show()
-```
 
 Here we can see that it only snowed or sleeted in New York. As a result, we only looked at flights that left on days with no precipitation or when it was raining. To examine the differences in departure delay time, we ran a two-sided, two-sample t-test to look at departure delay time (minutes).
 
