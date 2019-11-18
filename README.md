@@ -107,8 +107,8 @@ From this figure, we can see that mean departure delay time is greater when it i
 
 Here we can see that it only snowed or sleeted in New York. As a result, we only looked at flights that left on days with no precipitation or when it was raining. To examine the differences in departure delay time, we ran a two-sided, two-sample t-test to look at departure delay time (minutes).
 
-`H_0:` There is no difference in departure delay time between flights not affected by any precipitation and flights that were affected by rain. (`D_{\text{no rain}}` = `D_{\text{rain}`)
-`H_a:` We can reject the null hypothesis. There is a difference in departure delay time between flights not affected by any precipitation and flights that were affected by rain. (`D_{\text{no rain}} \neq D_{\text{rain}`)
+`$H_0:$` There is no difference in departure delay time between flights not affected by any precipitation and flights that were affected by rain. (`$D_{\text{no rain}}$` = `$D_{\text{rain}$`)
+`$H_a:$` We can reject the null hypothesis. There is a difference in departure delay time between flights not affected by any precipitation and flights that were affected by rain. (`$D_{\text{no rain}} \neq D_{\text{rain}$`)
 
 ```python
 # Subset for rain or no precipitation
