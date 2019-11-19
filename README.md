@@ -149,3 +149,6 @@ From the two-way ANOVA results, we can reject all three null hypotheses. For pos
 
 ## Moving Forward
 
+* Account for potential dependencies in time series data
+* Explore other cities with similar climates
+* Explore other variables that may contribute to delays in flights
